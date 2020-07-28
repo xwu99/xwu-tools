@@ -6,6 +6,6 @@ jdk:
 before_install:
   echo $JAVA_HOME
 install: 
-  ./travis/install-oneapi.sh
+  sudo ./travis/install-oneapi.sh
 before_script:
 script:
