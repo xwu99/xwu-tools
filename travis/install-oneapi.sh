@@ -9,4 +9,4 @@ echo "deb https://apt.repos.intel.com/oneapi all main" | sudo tee /etc/apt/sourc
 sudo apt-get update
 sudo apt-get install intel-oneapi-daal-devel intel-oneapi-tbb-devel
 
-find /opt | grep vars
+find /opt
