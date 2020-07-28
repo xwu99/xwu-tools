@@ -5,6 +5,7 @@ jdk:
   - openjdk8
 before_install:
   echo $JAVA_HOME
-install:
+install: 
+  ./travis/install-oneapi.sh
 before_script:
 script:
