@@ -11,5 +11,4 @@ sudo apt-get install intel-oneapi-daal-devel-2021.1-beta08 intel-oneapi-tbb-deve
 
 source /opt/intel/oneapi/setvars.sh
 
-find $DAALROOT
-
+find /opt/intel
