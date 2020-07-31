@@ -9,3 +9,5 @@ echo "deb https://apt.repos.intel.com/oneapi all main" | sudo tee /etc/apt/sourc
 sudo apt-get update
 sudo apt-get install intel-oneapi-daal-devel-2021.1-beta08 intel-oneapi-tbb-devel-2021.1-beta08
 
+source /opt/intel/oneapi/setvars.sh
+
