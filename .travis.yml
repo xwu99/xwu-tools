@@ -9,3 +9,4 @@ install:
   sudo ./travis/install-oneapi.sh
 before_script:
 script:
+  echo SUCCESS
