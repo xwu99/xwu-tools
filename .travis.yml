@@ -13,5 +13,5 @@ install:
   - sudo ./travis/python/setup-env.sh
 before_script:
 script:
-  - sudo ./travis/check-pyspark.sh
+  - sudo ./travis/pyspark-pi.sh
   - echo SUCCESS
