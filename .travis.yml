@@ -1,4 +1,4 @@
-sudo: required
+os: linux
 dist: bionic
 language: java
 jdk:
@@ -12,6 +12,5 @@ install:
   - sudo ./travis/python/setup-env.sh
 before_script:
 script:
-  - cd $SPARK_HOME
   - sudo ./travis/check-pyspark.sh
   - echo SUCCESS
