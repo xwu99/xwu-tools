@@ -7,11 +7,11 @@ before_install:
   - echo java is in $JAVA_HOME
 install: 
   # sudo ./travis/install-oneapi.sh
-  - sudo ./travis/config-ssh.sh
-  - sudo ./travis/spark-cluster/setup-cluster.sh
-  - sudo ./travis/python/setup-python3-env.sh
+  - ./travis/config-ssh.sh
+  - ./travis/spark-cluster/setup-cluster.sh
+  - ./travis/python/setup-python3-env.sh
 before_script:
 script:
   # - sudo ./travis/pyspark-pi.sh
-  - sudo ./travis/pyspark-kmeans.sh
+  - ./travis/pyspark-kmeans.sh
   - echo SUCCESS
