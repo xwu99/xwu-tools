@@ -10,4 +10,5 @@ export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
 export PYSPARK_PYTHON=python3
 
 cd $SPARK_HOME
+
 ./bin/spark-submit examples/src/main/python/pi.py
