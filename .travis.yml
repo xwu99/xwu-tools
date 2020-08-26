@@ -10,7 +10,7 @@ install:
   # sudo ./travis/install-oneapi.sh
   - sudo ./travis/config-ssh.sh
   - sudo ./travis/spark-cluster/setup-cluster.sh
-  - sudo ./travis/python/setup-env.sh
+  - sudo ./travis/python/setup-python3-env.sh
 before_script:
 script:
   - sudo ./travis/pyspark-pi.sh
