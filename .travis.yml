@@ -6,15 +6,15 @@ jdk:
 python:
   - "3.6"
 before_install:
-  echo $JAVA_HOME
-  python --version
+  - echo $JAVA_HOME
+  - python --version
 install: 
   # sudo ./travis/install-oneapi.sh
-  sudo ./travis/config-ssh.sh
-  ./travis/spark-cluster/setup-cluster.sh
-  ./travis/python/setup-env.sh
+  - sudo ./travis/config-ssh.sh
+  - ./travis/spark-cluster/setup-cluster.sh
+  - ./travis/python/setup-env.sh
 before_script:
 script:
-  cd $SPARK_HOME
-  ./bin/spark-submit examples/src/main/python/pi.py
-  echo SUCCESS
+  - cd $SPARK_HOME
+  - ./bin/spark-submit examples/src/main/python/pi.py
+  - echo SUCCESS
