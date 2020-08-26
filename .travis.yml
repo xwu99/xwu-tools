@@ -16,5 +16,5 @@ install:
 before_script:
 script:
   - cd $SPARK_HOME
-  - sudo ./bin/spark-submit examples/src/main/python/pi.py
+  - sudo ./travis/check-pyspark.sh
   - echo SUCCESS
