@@ -14,4 +14,8 @@ conda activate test-environment
 which python
 
 # ./bin/spark-submit examples/src/main/python/pi.py
+
+hadoop fs -mkdir -p data/mllib
+hadoop fs -copyFromLocal $SPARK_HOME/data/mllib/sample_kmeans_data.txt data/mllib
+
 ./bin/spark-submit examples/src/main/python/ml/kmeans_example.py
