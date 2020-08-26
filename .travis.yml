@@ -4,8 +4,7 @@ language: java
 jdk:
   - openjdk8
 before_install:
-  - echo $JAVA_HOME
-  - python3 --version
+  - echo java is in $JAVA_HOME
 install: 
   # sudo ./travis/install-oneapi.sh
   - sudo ./travis/config-ssh.sh
@@ -13,5 +12,6 @@ install:
   - sudo ./travis/python/setup-python3-env.sh
 before_script:
 script:
-  - sudo ./travis/pyspark-pi.sh
+  # - sudo ./travis/pyspark-pi.sh
+  - sudo ./travis/pyspark-kmeans.sh
   - echo SUCCESS
