@@ -8,5 +8,10 @@ export PATH=$HADOOP_HOME/bin:$SPARK_HOME/bin:$PATH
 
 cd $SPARK_HOME
 
+source "$HOME/miniconda/etc/profile.d/conda.sh"
+conda activate test-environment
+
 which python
-./bin/spark-submit examples/src/main/python/pi.py
+
+# ./bin/spark-submit examples/src/main/python/pi.py
+./bin/spark-submit examples/src/main/python/ml/kmeans_example.py
