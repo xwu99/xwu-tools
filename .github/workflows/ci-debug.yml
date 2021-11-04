@@ -1,0 +1,15 @@
+name: CI Debug
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Test bash scripts
+        run: |
+          ${{github.workspace}}/ci-debug/test-script.sh
+      - name: Run OK
+        run: |
+          echo "OK"
